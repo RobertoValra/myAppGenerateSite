@@ -1,25 +1,22 @@
 <ion-view view-title="Online Store">
   <ion-content class="padding">
     <h3>Welcome to Online Store</h3>
-	<div ng-controller="ProductType as type">
-		<div class="list">
-			<label class="item item-input item-select">
-				<div class="input-label">
-				  Select type of product
-				</div>
-				<select ng-model="mySelect" ng-change="showSelectValue(mySelect)">
-				  <option selected>Food</option>
-				  <option>Cleaning</option>
-				  <option>Electronics</option>
-				</select>
-			</label>
-			h3 Hello con
-			<p>p hello con</p>
-			<h3>h3 Hello sin</h3>
-			<p>p hello sin</p>
+	<div ng-app="starter">
+		<div ng-controller="ProductType as type">
+			<div class="list">
+				<label class="item item-input item-select">
+					<div class="input-label">
+					  Select type of product
+					</div>
+					<select ng-model="mySelect" ng-change="showSelectValue(mySelect)">
+					  <option selected>Food</option>
+					  <option>Cleaning</option>
+					  <option>Electronics</option>
+					</select>
+				</label>
+			</div>	
+			{{hello}}
 		</div>
-			<h3>h3 Hello sin fuera</h3>
-			<p>p hello sin fuera</p>
 	</div>
   </ion-content>
 </ion-view>
