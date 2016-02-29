@@ -10,9 +10,10 @@ angular.module('starter.controllers', [])
   //$scope.$on('$ionicView.enter', function(e) {
   //});
 
-.controller('ProductType', function($scope) {
+.controller('ProductType', function($scope, productInfo) {
 	this.products = food;
 	$scope.showSelectValue = function(mySelect) {
 		console.log(mySelect);
 	}
 });
+
