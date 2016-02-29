@@ -11,6 +11,7 @@ angular.module('starter.controllers', [])
   //});
 
 .controller('ProductType', function($scope) {
+	this.products = food;
 	$scope.showSelectValue = function(mySelect) {
 		console.log(mySelect);
 	}
