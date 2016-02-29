@@ -11,7 +11,7 @@ angular.module('starter.controllers', [])
   //});
 
 .controller('ProductType', function($scope, productInfo) {
-	$scope.products = productInfo.food;
+	$scope.products = productInfo.foods;
 	$scope.showSelectValue = function(mySelect) {
 		console.log(mySelect);
 	}
