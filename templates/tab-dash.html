@@ -1,5 +1,5 @@
 <ion-view view-title="Online Store">
-  <ion-content class="padding" ng-app="starter">
+  <ion-content class="padding">
     <h3>Welcome to Online Store</h3>
 	<div ng-controller="ProductType as type">
 		<div class="list">
@@ -13,8 +13,15 @@
 				  <option>Electronics</option>
 				</select>
 			</label>
-		</div>	
-		"{{Hello}}"
+		</div>
+		<ion-list>
+			<ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="food in foods" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+			<img ng-src="{{food.img}}">
+			<h2>{{food.name}}</h2>
+			<p>{{food.price}}</p>
+			<i class="icon ion-chevron-right icon-accessory"></i>
+			</ion-item>
+		</ion-list>		
 	</div>
   </ion-content>
 </ion-view>
