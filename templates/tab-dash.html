@@ -2,11 +2,11 @@
   <ion-content class="padding">
     <h3>Welcome to Online Store</h3>
     <div class="list">
-		<label class="item item-input item-select">
+		<label class="item item-input item-select" ng-controller="ProductType">
 			<div class="input-label">
 			  Select type of product
 			</div>
-			<select>
+			<select ng-model="mySelect" ng-change="showSelectValue(mySelect)">
 			  <option selected>Food</option>
 			  <option>Cleaning</option>
 			  <option>Electronics</option>
