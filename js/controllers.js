@@ -26,3 +26,10 @@ angular.module('starter.controllers', [])
     enableFriends: true
   };
 });
+
+.controller('ProductType', function($scope, $window) {
+	$scope.showSelectValue = function(mySelect) {
+		console.log(mySelect);
+		$window.alert(mySelect);
+	}
+});
