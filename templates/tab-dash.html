@@ -1,7 +1,7 @@
 <ion-view view-title="Online Store">
   <ion-content class="padding">
     <h3>Welcome to Online Store</h3>
-    <div class="list">
+    <div class="list" ng-controller="ProductType as type">
 		<label class="item item-input item-select" ng-controller="ProductType">
 			<div class="input-label">
 			  Select type of product
@@ -12,16 +12,9 @@
 			  <option>Electronics</option>
 			</select>
 		</label>
-		<ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/dash/{{chat.id}}">
-			<img ng-src="{{chat.face}}">
-			<h2>{{chat.name}}</h2>
-			<p>{{chat.lastText}}</p>
-			<i class="icon ion-chevron-right icon-accessory"></i>
-
-			<ion-option-button class="button-assertive" ng-click="remove(chat)">
-			  Delete
-			</ion-option-button>
-		</ion-item>
+		<p ng-repeat="product in type.products">
+		</p>
 	</div>
+	
   </ion-content>
 </ion-view>
