@@ -25,7 +25,7 @@ angular.module('starter.controllers', [])
   $scope.settings = {
     enableFriends: true
   };
-});
+})
 
 .controller('ProductType', function($scope, $window) {
 	$scope.showSelectValue = function(mySelect) {
