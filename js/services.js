@@ -1,47 +1,47 @@
 angular.module('starter.services', [])
 
-.factory('productInfo', function() {
+.factory('Chats', function() {
   // Might use a resource here that returns a JSON array
 
   // Some fake testing data
-  var productInfo = [{
+  var chats = [{
     id: 0,
-    product: 'Felps',
-    price: 'You on your way?',
-    img: 'img/ben.png'
+    name: 'Ben Sparrow',
+    lastText: 'You on your way?',
+    face: 'img/ben.png'
   }, {
     id: 1,
-    product: 'Felps',
-    price: 'You on your way?',
-    img: 'img/ben.png'
+    name: 'Max Lynx',
+    lastText: 'Hey, it\'s me',
+    face: 'img/max.png'
   }, {
     id: 2,
-    product: 'Felps',
-    price: 'You on your way?',
-    img: 'img/ben.png'
+    name: 'Adam Bradleyson',
+    lastText: 'I should buy a boat',
+    face: 'img/adam.jpg'
   }, {
     id: 3,
-    product: 'Felps',
-    price: 'You on your way?',
-    img: 'img/ben.png'
+    name: 'Perry Governor',
+    lastText: 'Look at my mukluks!',
+    face: 'img/perry.png'
   }, {
     id: 4,
-    product: 'Felps',
-    price: 'You on your way?',
-    img: 'img/ben.png'
+    name: 'Mike Harrington',
+    lastText: 'This is wicked good ice cream.',
+    face: 'img/mike.png'
   }];
 
   return {
     all: function() {
-      return productInfo;
+      return chats;
     },
-    remove: function(productInf) {
-      productInfo.splice(productInfo.indexOf(productInf), 1);
+    remove: function(chat) {
+      chats.splice(chats.indexOf(chat), 1);
     },
     get: function(chatId) {
-      for (var i = 0; i < productInfo.length; i++) {
-        if (productInfo[i].id === parseInt(chatId)) {
-          return productInfo[i];
+      for (var i = 0; i < chats.length; i++) {
+        if (chats[i].id === parseInt(chatId)) {
+          return chats[i];
         }
       }
       return null;
