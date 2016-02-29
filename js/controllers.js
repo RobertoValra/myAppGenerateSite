@@ -27,9 +27,8 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('ProductType', function($scope, $window) {
+.controller('ProductType', function($scope) {
 	$scope.showSelectValue = function(mySelect) {
 		console.log(mySelect);
-		$window.alert(mySelect);
 	}
 });
