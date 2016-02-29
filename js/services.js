@@ -35,8 +35,8 @@ angular.module('starter.services', [])
     all: function() {
       return productInfo;
     },
-    remove: function(chat) {
-      productInfo.splice(productInfo.indexOf(chat), 1);
+    remove: function(productInf) {
+      productInfo.splice(productInfo.indexOf(productInf), 1);
     },
     get: function(chatId) {
       for (var i = 0; i < productInfo.length; i++) {
